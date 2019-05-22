@@ -1,0 +1,19 @@
+{
+
+  "description": "Append links of thumbnail images to YouTube",
+  "manifest_version": 2,
+  "name": "YouTube Thumbnails",
+  "version": "1.0",
+  "homepage_url": "https://github.com/tyru/youtube-thumbnails",
+  "icons": {
+    "48": "icon-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/watch*"],
+      "js": ["yt-thumbnails.js"]
+    }
+  ]
+
+}

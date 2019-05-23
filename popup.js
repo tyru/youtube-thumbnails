@@ -41,9 +41,17 @@ function makeContent(vid, quality) {
     {quality: 'sddefault', title: '640x480'},
     {quality: 'maxresdefault', title: '1280x720'},
   ].forEach(link => {
+    if (link.quality === quality) {
+      const $span = document.createElement('span');
+      $span.textContent = link.title;
+      $span.className = 'link';
+      $links.appendChild($span);
+      return;
+    }
     const $a = document.createElement('a');
     $a.innerText = link.title;
     $a.href = '#';
+    $a.className = 'link';
     $a.addEventListener('click', () => {
       render(true, vid, link.quality);
     });

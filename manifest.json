@@ -8,12 +8,10 @@
   "icons": {
     "48": "icon-48.png"
   },
-
-  "content_scripts": [
-    {
-      "matches": ["*://www.youtube.com/watch*"],
-      "js": ["yt-thumbnails.js"]
-    }
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs"
   ]
-
 }

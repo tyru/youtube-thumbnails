@@ -1,0 +1,11 @@
+.links {
+  margin-bottom: 3px;
+  font-size: 14px;
+  text-align: right;
+}
+.links a:not(:last-child) {
+  margin-right: 5px;
+}
+.notfound {
+  white-space: nowrap;
+}

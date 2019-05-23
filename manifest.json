@@ -1,6 +1,6 @@
 {
 
-  "description": "Append links of thumbnail images to YouTube",
+  "description": "Show the thumbnail image of watching movie on YouTube",
   "manifest_version": 2,
   "name": "YouTube Thumbnails",
   "version": "1.0",
